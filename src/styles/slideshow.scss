@@ -1,4 +1,5 @@
 @use './variables' as v;
+@import './adaptive';
 
 #slideshow{
     position: relative;
@@ -63,20 +64,20 @@
         }
     }        
     
+    .slideshow{
+        display: flex;
+        align-items: center;
+    }
+
     .prev{
-        position: absolute;
+        width: 44px;
         content: url('../assets/svg/arrow-left.svg');
-        right: 100%;
-        top: 50%;
-        transform: translateY(-50%);
         cursor: pointer;
     }
     .next{
-        position: absolute;
+        width: 44px;
+
         content: url('../assets/svg/arrow-right.svg');
-        left: 100%;
-        top: 50%;
-        transform: translateY(-50%);
         cursor: pointer;
     }
 
@@ -87,13 +88,114 @@
         justify-content: center;
         .swiper-pagination-bullet{
             cursor: pointer;
-            width: 16px;
-            height: 16px;
+            width: 12px;
+            height: 12px;
             border-radius: 50%;
             background: v.$primary-grey;
             opacity: 1;
             &.swiper-pagination-bullet-active{
                 background: v.$primary-green;
+            }
+        }
+    }
+
+    @include _lg{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        width: 100%;
+        .slide{
+            aspect-ratio: 1 / 1;
+            position: relative;
+            display: flex;
+            align-items: flex-end;
+            border-radius: 16px;
+            overflow: hidden;
+            background: lightgray;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+                opacity: 0;
+                transition: opacity 250ms ease-in-out;
+                &.loaded{
+                    opacity: 1;
+                }
+            }
+            .text{
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                height: 120px;
+                width: 100%;
+                padding: 24px 24px 32px;
+                color: v.$white;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 20px;
+                background: rgba(44, 44, 44, 0.40);
+                backdrop-filter: blur(2px);
+            }
+
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            &.slide1{
+                background-image: url('../assets/images/small/slide1-small.jpg');
+            }
+            &.slide2{
+                background-image: url('../assets/images/small/slide2-small.jpg');
+            }
+            &.slide3{
+                background-image: url('../assets/images/small/slide3-small.jpg');
+            }
+            &.slide4{
+                background-image: url('../assets/images/small/slide4-small.jpg');
+            }
+            &.slide5{
+                background-image: url('../assets/images/small/slide5-small.jpg');
+            }
+            &.slide6{
+                background-image: url('../assets/images/small/slide6-small.jpg');
+            }
+        }        
+        
+        .prev{
+            width: auto;
+            position: absolute;
+            content: url('../assets/svg/arrow-left.svg');
+            right: 100%;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+        }
+        .next{
+            width: auto;
+            position: absolute;
+            content: url('../assets/svg/arrow-right.svg');
+            left: 100%;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+        }
+
+        .pagination{
+            display: flex;
+            gap: 8px;
+            align-items: center;
+            justify-content: center;
+            .swiper-pagination-bullet{
+                cursor: pointer;
+                width: 16px;
+                height: 16px;
+                border-radius: 50%;
+                background: v.$primary-grey;
+                opacity: 1;
+                &.swiper-pagination-bullet-active{
+                    background: v.$primary-green;
+                }
             }
         }
     }

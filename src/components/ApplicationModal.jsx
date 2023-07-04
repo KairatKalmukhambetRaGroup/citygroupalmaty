@@ -37,6 +37,7 @@ const ApplicationModal = ({showModal, setShowModal}) => {
             <div className="overlay" onClick={closeModal}></div>
             <form onSubmit={handleSubmit}>
                 <div className="heading">
+                    <div className="close" onClick={closeModal}>Закрыть</div>
                     <div className="title">
                     Получите консультацию от наших специалистов
                     </div>

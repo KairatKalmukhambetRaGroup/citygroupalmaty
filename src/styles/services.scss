@@ -1,99 +1,202 @@
 @use './variables' as v;
+@import './adaptive';
 
 #services{
     display: grid;
     grid-template-columns: 1fr 1fr;       
 
-    .card{
-        aspect-ratio: 720 / 560;
-        // aspect-ratio: 1/1;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: relative;
-
-        .card-image{
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            z-index: 50;
-            img{
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                object-position: center; 
-                opacity: 0;
-                transition: opacity 250ms ease-in-out;
-                &.loaded{
-                    opacity: 1;
-                }
-            }
-            .overlay{
+    .wrapper{
+        .card{
+            // aspect-ratio: 1/1;
+            aspect-ratio: 180 / 140;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            
+            .card-image{
                 position: absolute;
                 top: 0;
                 left: 0;
                 width: 100%;
                 height: 100%;
-                // background: linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%), lightgray 0px -261.21px / 100% 168.866% no-repeat;
-                background: linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%);
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                z-index: 50;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    object-position: center; 
+                    opacity: 0;
+                    transition: opacity 250ms ease-in-out;
+                    &.loaded{
+                        opacity: 1;
+                    }
+                }
+                .overlay{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    // background: linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%), lightgray 0px -261.21px / 100% 168.866% no-repeat;
+                    background: linear-gradient(180deg, rgba(174, 174, 174, 0.50) 0%, rgba(0, 0, 0, 0.45) 100%);                
+                }
+                &.card1{
+                    background-image: url('../assets/images/small/service1-small.jpg');
+                }
+                &.card2{
+                    background-image: url('../assets/images/small/service2-small.jpg');
+                }
+                &.card3{
+                    background-image: url('../assets/images/small/service3-small.jpg');
+                }
+                &.card4{
+                    background-image: url('../assets/images/small/service4-small.jpg');
+                }
+                &.card5{
+                    background-image: url('../assets/images/small/service5-small.jpg');
+                }
+                &.card6{
+                    background-image: url('../assets/images/small/service6-small.jpg');
+                }
             }
-            &.card1{
-                background-image: url('../assets/images/small/service1-small.jpg');
+            .title{
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: v.$white;
+                font-size: 16px;
+                font-weight: 700;
+                text-align: center;
+                z-index: 50;
             }
-            &.card2{
-                background-image: url('../assets/images/small/service2-small.jpg');
-            }
-            &.card3{
-                background-image: url('../assets/images/small/service3-small.jpg');
-            }
-            &.card4{
-                background-image: url('../assets/images/small/service4-small.jpg');
-            }
-            &.card5{
-                background-image: url('../assets/images/small/service5-small.jpg');
-            }
-            &.card6{
-                background-image: url('../assets/images/small/service6-small.jpg');
-            }
-        }
-
-        .title{
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: v.$white;
-            font-size: 48px;
-            font-weight: 700;
-            text-align: center;
-            z-index: 50;
-        }
-        .text{
-            display: none;
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            z-index: 50;
-            padding: 42px;
-            width: 100%;
-
-            color: v.$white;
-            font-size: 40px;
-            font-weight: 600;
-        }
-        &:hover{
-            .overlay{
-                background: linear-gradient(180deg, rgba(174, 174, 174, 0.50) 0%, rgba(0, 0, 0, 0.45) 100%);
-            }
+    
             .text{
-                display: block;
+                display: none;
+            }
+        }
+        & > .text{
+            color: v.$black;
+            /* Body Small */
+            font-size: 13px;
+            font-weight: 500;
+            line-height: 16px;
+            padding: 8px;
+            height: 100%;
+            min-height: 64px;
+        }
+        &.green{
+            background: v.$primary-green;
+            &> .text{
+            color: v.$white;
+
+            }
+        }
+    }
+    @include _lg{
+        .wrapper{
+
+            .card{
+                aspect-ratio: 720 / 560;
+                // aspect-ratio: 1/1;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+        
+                .card-image{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    z-index: 50;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        object-position: center; 
+                        opacity: 0;
+                        transition: opacity 250ms ease-in-out;
+                        &.loaded{
+                            opacity: 1;
+                        }
+                    }
+                    .overlay{
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        // background: linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%), lightgray 0px -261.21px / 100% 168.866% no-repeat;
+                        background: linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%);
+                    }
+                    &.card1{
+                        background-image: url('../assets/images/small/service1-small.jpg');
+                    }
+                    &.card2{
+                        background-image: url('../assets/images/small/service2-small.jpg');
+                    }
+                    &.card3{
+                        background-image: url('../assets/images/small/service3-small.jpg');
+                    }
+                    &.card4{
+                        background-image: url('../assets/images/small/service4-small.jpg');
+                    }
+                    &.card5{
+                        background-image: url('../assets/images/small/service5-small.jpg');
+                    }
+                    &.card6{
+                        background-image: url('../assets/images/small/service6-small.jpg');
+                    }
+                }
+                .title{
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: v.$white;
+                    font-size: 48px;
+                    font-weight: 700;
+                    text-align: center;
+                    z-index: 50;
+                }
+        
+                .text{
+                    display: none;
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    z-index: 50;
+                    padding: 42px;
+                    width: 100%;
+        
+                    color: v.$white;
+                    font-size: 40px;
+                    font-weight: 600;
+                }
+                &:hover{
+                    .overlay{
+                        background: linear-gradient(180deg, rgba(174, 174, 174, 0.50) 0%, rgba(0, 0, 0, 0.45) 100%);
+                    }
+                    .text{
+                        display: block;
+                    }
+                }
+            }   
+            & > .text{
+                display: none;
             }
         }
     }
