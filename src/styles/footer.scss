@@ -1,0 +1,79 @@
+@use './variables' as v;
+
+footer{
+    margin-top: 120px;
+    padding: 120px 0 64px;
+    background: v.$primary-green;
+    position: relative;
+    overflow: hidden;
+    .content{
+        display: flex;
+        flex-direction: column;
+        gap: 48px;
+        .title{
+            color: v.$white;
+            font-size: 48px;
+            font-weight: 700;
+        }
+        .meta{
+            display: flex;
+            flex-direction: column;
+            gap: 80px;
+            .footer{
+                display: flex;
+                flex-direction: column;
+                gap: 32px;
+                .contacts{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 16px;
+                    color: v.$white;
+                    font-size: 28px;
+                    font-weight: 500;
+                    .icons{
+                        display: flex;
+                        gap: 20px;
+                        align-items: center;
+                        a{
+                            width: 80px;
+                            height: 80px;
+                            i{
+                                width: 80px;
+                                height: 80px;
+                            }
+                            &.whatsapp i{
+                                content: url('../assets/svg/whatsapp.svg');
+                            }
+                            &.telegram i{
+                                content: url('../assets/svg/telegram.svg');
+                            }
+                            &.instagram i{
+                                content: url('../assets/svg/instagram.svg');
+                            }
+                        }
+                    }
+                }
+                .copyright{
+                    color: v.$white;
+                    font-size: 18px;
+                    font-weight: 500;
+                    line-height: 24px;
+                }
+            }
+            .wave{
+                color: v.$white;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 20px;
+                text-decoration: none;
+            }
+        }
+    }
+    #contactImage{
+        position: absolute;
+        right: -1px;
+        bottom: 0;
+        height: 101%;
+        content: url('../assets/svg/contacts.svg');
+    }
+}

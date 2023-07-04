@@ -1,0 +1,58 @@
+@use './variables' as v;
+
+
+header{
+    background: v.$white;
+    width: 100%;
+    height: 120px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    .content{
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .logo{
+            color: v.$black;
+            font-weight: 600;
+            line-height: normal;
+            font-size: 23px;
+            text-decoration: none;
+        }
+        .navbar{
+            display: flex;
+            gap: 48px;
+            align-items: center;
+            .nav{
+                display: flex;
+                gap: 32px;
+                align-items: center;
+                a{
+                    color: v.$black_light;
+                    text-decoration: none;
+                    font-size: 16px;
+                    font-weight: 500;
+                    line-height: 20px;
+                }
+            }
+            .btn{
+                background: v.$primary-green;
+                border-radius: 8px;
+                padding: 8px;
+                width: 196px;
+                height: 48px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 20px;
+                color: v.$white;
+                cursor: pointer;
+            }
+        }
+    }
+}
