@@ -79,6 +79,16 @@
                     &:focus{
                         outline: none;
                     }
+
+                    &.err{
+                        border: 1px solid red;
+                    }
+                }
+                .error{
+                    padding-top: 8px;
+                    color: red;
+                    font-size: 16px;
+                    font-weight: 300;
                 }
             }
             .check-form{

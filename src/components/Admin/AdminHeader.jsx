@@ -1,10 +1,8 @@
+import { UserContext } from '@/app/admin/page';
 import '@/styles/admin/header.scss';
-import { useState } from 'react';
+
 
 const AdminHeader = () => {
-    const logout = (e) => {
-        e.preventDefault();
-    }
     return (
         <header>
             <div className="container">
@@ -13,12 +11,20 @@ const AdminHeader = () => {
                         City Group Almaty 
                     </a>
                     <div className="navbar">
-                        <div className="user">
-                            admin@citygroup.kz
-                        </div>
-                        <div className="btn" onClick={logout}>
-                            Выход
-                        </div>
+                        <UserContext.Consumer>
+                            {value => {
+                                return value.user && value.user.email && (
+                                    <>
+                                        <div className="user">
+                                            {value.user.email}
+                                        </div>
+                                        <div className="btn" onClick={(e)=>{e.preventDefault(); value.logout()}}>
+                                            Выход
+                                        </div>
+                                    </>
+                                )
+                            }}  
+                        </UserContext.Consumer>
                     </div>
                     <i className="menu" onClick={(e)=>{e.preventDefault(); setShowMenu(true)}} ></i>
                 </div>

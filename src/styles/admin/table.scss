@@ -68,6 +68,7 @@
                     }
                 }
                 .btn{
+                    border: none;
                     padding: 8px 16px;
                     font-size: 16px;
                     font-family: Gilroy;
@@ -77,8 +78,30 @@
                     color: v.$black;
                     border-radius: 8px;
                     cursor: pointer;
-                        background: v.$primary-green;
-                        color: v.$white;
+                    background: v.$primary-green;
+                    color: v.$white;
+                    &:focus{
+                        outline: none;
+                    }    
+                }
+            }
+        }
+
+        .select-nav{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 40px;
+            div{
+                color: v.$black;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 20px;
+                &.btn{
+                    cursor: pointer;
+                    &:hover{
+                        color: v.$primary-green;
+                    }
                 }
             }
         }
@@ -123,6 +146,7 @@
                         color: v.$black;
                         padding: 16px;
                         border-right: 1px solid v.$primary-grey;
+                        border-bottom: 1px solid v.$white;
                         &:last-of-type{
                             border-right: 0;
                         }
@@ -133,8 +157,48 @@
                     &:nth-child(even) td {
                         background: #F2F6FA;
                     }
+
+                    &.selected td{
+                        background: rgba(v.$primary-grey, .5);
+                        border-color: v.$white;
+                    }
                 }
             }
         }
+        .loading{
+            padding: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            i{
+                width: 48px;
+                height: 48px;
+                content: url('../../assets/svg/loading.svg');
+                animation: rotate 2s linear infinite;
+            }
+        }
+        .none{
+            padding: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            color: v.$black;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 20px;
+        }
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg) scale(1.0);
+    }
+    50%{
+        transform: rotate(180deg) scale(0.9);
+    }
+    100% {
+        transform: rotate(360deg) scale(1.0);
     }
 }
