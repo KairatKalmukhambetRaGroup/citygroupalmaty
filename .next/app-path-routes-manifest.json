@@ -1,0 +1,7 @@
+{
+  "/favicon.ico/route": "/favicon.ico",
+  "/page": "/",
+  "/admin/page": "/admin",
+  "/api/users/route": "/api/users",
+  "/api/applications/route": "/api/applications"
+}
