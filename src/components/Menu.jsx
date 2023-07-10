@@ -1,11 +1,11 @@
 import '@/styles/menu.scss';
 
-const Menu = ({setShowMenu}) => {
+const Menu = ({setShowMenu, showMenu}) => {
     const close = (e) => {
         setShowMenu(false);
     }
     return (
-        <div id="menu">
+        <div id="menu" className={showMenu ? '' : 'hide'}>
             <div className="close" onClick={close}>Закрыть</div>
             <i className="logo"></i>
             <div className="nav">

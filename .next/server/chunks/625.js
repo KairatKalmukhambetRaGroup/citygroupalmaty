@@ -46,7 +46,7 @@ _export(exports, {
         return warnOnce;
     }
 });
-const _chalk = /*#__PURE__*/ _interop_require_default(__webpack_require__(3942));
+const _chalk = /*#__PURE__*/ _interop_require_default(__webpack_require__(5093));
 function _interop_require_default(obj) {
     return obj && obj.__esModule ? obj : {
         default: obj
@@ -1829,7 +1829,7 @@ if ((typeof exports.default === "function" || typeof exports.default === "object
 
 /***/ }),
 
-/***/ 3942:
+/***/ 5093:
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 
@@ -4675,7 +4675,7 @@ Object.defineProperty(exports, "addLocale", ({
         return addLocale;
     }
 }));
-const _addpathprefix = __webpack_require__(2610);
+const _addpathprefix = __webpack_require__(6079);
 const _pathhasprefix = __webpack_require__(1342);
 function addLocale(path, locale, defaultLocale, ignorePrefix) {
     // If no locale was given or the locale is the default locale, we don't need
@@ -4695,7 +4695,7 @@ function addLocale(path, locale, defaultLocale, ignorePrefix) {
 
 /***/ }),
 
-/***/ 2610:
+/***/ 6079:
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 
@@ -4759,7 +4759,7 @@ Object.defineProperty(exports, "formatNextPathnameInfo", ({
     }
 }));
 const _removetrailingslash = __webpack_require__(465);
-const _addpathprefix = __webpack_require__(2610);
+const _addpathprefix = __webpack_require__(6079);
 const _addpathsuffix = __webpack_require__(7928);
 const _addlocale = __webpack_require__(5723);
 function formatNextPathnameInfo(info) {

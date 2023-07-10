@@ -27,9 +27,7 @@ const Header = ({openModal}) => {
                     </div>
                 </div>
             </header>
-                {showMenu && (
-                    <Menu setShowMenu={setShowMenu} />
-                )}
+                    <Menu setShowMenu={setShowMenu} showMenu={showMenu} />
         </>
     );
 };

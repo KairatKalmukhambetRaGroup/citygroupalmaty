@@ -5,7 +5,7 @@
 #menu{
     position: fixed;
     top: 0;
-    right: 0;
+    right: 0px;
     bottom: 0;
     padding: 64px 32px;
     height: 100%;    
@@ -15,8 +15,11 @@
     display: flex;
     flex-direction: column;
     gap: 24px;
-
     z-index: 1000;
+    transition: right .5s ease-in-out;
+    &.hide{
+        right: -100%;
+    }
 
     .close{
         cursor: pointer;

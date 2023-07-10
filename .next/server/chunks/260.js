@@ -3374,7 +3374,7 @@ exports.createVerify = function createVerify(opts) {
 
 /***/ }),
 
-/***/ 6079:
+/***/ 1659:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -3437,7 +3437,7 @@ module.exports = DataStream;
 "use strict";
 /*global module*/ 
 var Buffer = (__webpack_require__(2557).Buffer);
-var DataStream = __webpack_require__(6079);
+var DataStream = __webpack_require__(1659);
 var jwa = __webpack_require__(54);
 var Stream = __webpack_require__(2781);
 var toString = __webpack_require__(249);
@@ -3523,7 +3523,7 @@ module.exports = function toString(obj) {
 "use strict";
 /*global module*/ 
 var Buffer = (__webpack_require__(2557).Buffer);
-var DataStream = __webpack_require__(6079);
+var DataStream = __webpack_require__(1659);
 var jwa = __webpack_require__(54);
 var Stream = __webpack_require__(2781);
 var toString = __webpack_require__(249);

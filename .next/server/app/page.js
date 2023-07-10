@@ -1120,12 +1120,13 @@ var menu = __webpack_require__(9296);
 ;// CONCATENATED MODULE: ./src/components/Menu.jsx
 
 
-const Menu = ({ setShowMenu })=>{
+const Menu = ({ setShowMenu, showMenu })=>{
     const close = (e)=>{
         setShowMenu(false);
     };
     return /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
         id: "menu",
+        className: showMenu ? "" : "hide",
         children: [
             /*#__PURE__*/ jsx_runtime_.jsx("div", {
                 className: "close",
@@ -1227,8 +1228,9 @@ const Header = ({ openModal })=>{
                     })
                 })
             }),
-            showMenu && /*#__PURE__*/ jsx_runtime_.jsx(components_Menu, {
-                setShowMenu: setShowMenu
+            /*#__PURE__*/ jsx_runtime_.jsx(components_Menu, {
+                setShowMenu: setShowMenu,
+                showMenu: showMenu
             })
         ]
     });

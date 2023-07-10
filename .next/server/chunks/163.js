@@ -125,7 +125,7 @@ function defer(fn)
 
 /***/ }),
 
-/***/ 8066:
+/***/ 3942:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var async = __webpack_require__(3120)
@@ -290,7 +290,7 @@ function terminator(callback)
 /***/ 5888:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-var iterate    = __webpack_require__(8066)
+var iterate    = __webpack_require__(3942)
   , initState  = __webpack_require__(7728)
   , terminator = __webpack_require__(2496)
   ;
@@ -364,7 +364,7 @@ function serial(list, iterator, callback)
 /***/ 7239:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-var iterate    = __webpack_require__(8066)
+var iterate    = __webpack_require__(3942)
   , initState  = __webpack_require__(7728)
   , terminator = __webpack_require__(2496)
   ;
@@ -827,7 +827,7 @@ function plural(ms, msAbs, n, name) {
 
 /***/ }),
 
-/***/ 8634:
+/***/ 2610:
 /***/ ((module, exports, __webpack_require__) => {
 
 /* eslint-env browser */
@@ -1393,7 +1393,7 @@ module.exports = setup;
  */
 
 if (typeof process === 'undefined' || process.type === 'renderer' || false === true || process.__nwjs) {
-	module.exports = __webpack_require__(8634);
+	module.exports = __webpack_require__(2610);
 } else {
 	module.exports = __webpack_require__(6704);
 }

@@ -372,7 +372,7 @@ var jsx_runtime_ = __webpack_require__(6786);
 var react_ = __webpack_require__(8038);
 var react_default = /*#__PURE__*/__webpack_require__.n(react_);
 // EXTERNAL MODULE: ./src/styles/admin/header.scss
-var header = __webpack_require__(6792);
+var header = __webpack_require__(8066);
 ;// CONCATENATED MODULE: ./src/components/Admin/AdminHeader.jsx
 
 
@@ -1084,7 +1084,7 @@ const e1 = proxy["useUserContext"];
 
 /***/ }),
 
-/***/ 6792:
+/***/ 8066:
 /***/ (() => {
 
 
