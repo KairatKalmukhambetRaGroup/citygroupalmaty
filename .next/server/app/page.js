@@ -1311,29 +1311,45 @@ const Services = ()=>{
     return /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
         id: "services",
         children: [
+            /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                className: "container",
+                children: /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                    className: "title",
+                    children: "УСЛУГИ"
+                })
+            }),
             /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                className: "wrapper green",
+                className: "content",
                 children: [
                     /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                        className: "card",
+                        className: "wrapper green",
                         children: [
                             /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                                className: "card-image card1",
+                                className: "card",
                                 children: [
-                                    /*#__PURE__*/ jsx_runtime_.jsx((image_default()), {
-                                        src: service1,
-                                        alt: "service",
-                                        onLoadingComplete: imgLoaded,
-                                        onLoad: imgLoaded
+                                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                        className: "card-image card1",
+                                        children: [
+                                            /*#__PURE__*/ jsx_runtime_.jsx((image_default()), {
+                                                src: service1,
+                                                alt: "service",
+                                                onLoadingComplete: imgLoaded,
+                                                onLoad: imgLoaded
+                                            }),
+                                            /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                                className: "overlay"
+                                            })
+                                        ]
                                     }),
                                     /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                        className: "overlay"
+                                        className: "title",
+                                        children: "УБОРКА ПОДЪЕЗДОВ"
+                                    }),
+                                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                        className: "text",
+                                        children: "Гарантируем чистоту и порядок у ваших дверей, всегда"
                                     })
                                 ]
-                            }),
-                            /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                className: "title",
-                                children: "УБОРКА ПОДЪЕЗДОВ"
                             }),
                             /*#__PURE__*/ jsx_runtime_.jsx("div", {
                                 className: "text",
@@ -1341,38 +1357,38 @@ const Services = ()=>{
                             })
                         ]
                     }),
-                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                        className: "text",
-                        children: "Гарантируем чистоту и порядок у ваших дверей, всегда"
-                    })
-                ]
-            }),
-            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                className: "wrapper",
-                children: [
                     /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                        className: "card",
+                        className: "wrapper",
                         children: [
                             /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                                className: "card-image card2",
+                                className: "card",
                                 children: [
-                                    /*#__PURE__*/ jsx_runtime_.jsx((image_default()), {
-                                        src: service2,
-                                        alt: "service",
-                                        onLoadingComplete: imgLoaded,
-                                        onLoad: imgLoaded
+                                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                        className: "card-image card2",
+                                        children: [
+                                            /*#__PURE__*/ jsx_runtime_.jsx((image_default()), {
+                                                src: service2,
+                                                alt: "service",
+                                                onLoadingComplete: imgLoaded,
+                                                onLoad: imgLoaded
+                                            }),
+                                            /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                                className: "overlay"
+                                            })
+                                        ]
+                                    }),
+                                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                        className: "title",
+                                        children: [
+                                            "ОБСЛУЖИВАНИЕ",
+                                            /*#__PURE__*/ jsx_runtime_.jsx("br", {}),
+                                            "ДЕТСКИХ ПЛОЩАДОК"
+                                        ]
                                     }),
                                     /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                        className: "overlay"
+                                        className: "text",
+                                        children: "Все лучшее - детям!"
                                     })
-                                ]
-                            }),
-                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                                className: "title",
-                                children: [
-                                    "ОБСЛУЖИВАНИЕ",
-                                    /*#__PURE__*/ jsx_runtime_.jsx("br", {}),
-                                    "ДЕТСКИХ ПЛОЩАДОК"
                                 ]
                             }),
                             /*#__PURE__*/ jsx_runtime_.jsx("div", {
@@ -1381,38 +1397,38 @@ const Services = ()=>{
                             })
                         ]
                     }),
-                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                        className: "text",
-                        children: "Все лучшее - детям!"
-                    })
-                ]
-            }),
-            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                className: "wrapper",
-                children: [
                     /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                        className: "card",
+                        className: "wrapper",
                         children: [
                             /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                                className: "card-image card3",
+                                className: "card",
                                 children: [
-                                    /*#__PURE__*/ jsx_runtime_.jsx((image_default()), {
-                                        src: service3,
-                                        alt: "service",
-                                        onLoadingComplete: imgLoaded,
-                                        onLoad: imgLoaded
+                                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                        className: "card-image card3",
+                                        children: [
+                                            /*#__PURE__*/ jsx_runtime_.jsx((image_default()), {
+                                                src: service3,
+                                                alt: "service",
+                                                onLoadingComplete: imgLoaded,
+                                                onLoad: imgLoaded
+                                            }),
+                                            /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                                className: "overlay"
+                                            })
+                                        ]
+                                    }),
+                                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                        className: "title",
+                                        children: [
+                                            "ТЕХОБСЛУЖИВАНИЕ",
+                                            /*#__PURE__*/ jsx_runtime_.jsx("br", {}),
+                                            "КВАРТИР"
+                                        ]
                                     }),
                                     /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                        className: "overlay"
+                                        className: "text",
+                                        children: "Бесплатный вызов мастера 24/7"
                                     })
-                                ]
-                            }),
-                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                                className: "title",
-                                children: [
-                                    "ТЕХОБСЛУЖИВАНИЕ",
-                                    /*#__PURE__*/ jsx_runtime_.jsx("br", {}),
-                                    "КВАРТИР"
                                 ]
                             }),
                             /*#__PURE__*/ jsx_runtime_.jsx("div", {
@@ -1421,35 +1437,35 @@ const Services = ()=>{
                             })
                         ]
                     }),
-                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                        className: "text",
-                        children: "Бесплатный вызов мастера 24/7"
-                    })
-                ]
-            }),
-            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                className: "wrapper green",
-                children: [
                     /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                        className: "card",
+                        className: "wrapper green",
                         children: [
                             /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                                className: "card-image card4",
+                                className: "card",
                                 children: [
-                                    /*#__PURE__*/ jsx_runtime_.jsx((image_default()), {
-                                        src: service4,
-                                        alt: "service",
-                                        onLoadingComplete: imgLoaded,
-                                        onLoad: imgLoaded
+                                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                        className: "card-image card4",
+                                        children: [
+                                            /*#__PURE__*/ jsx_runtime_.jsx((image_default()), {
+                                                src: service4,
+                                                alt: "service",
+                                                onLoadingComplete: imgLoaded,
+                                                onLoad: imgLoaded
+                                            }),
+                                            /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                                className: "overlay"
+                                            })
+                                        ]
                                     }),
                                     /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                        className: "overlay"
+                                        className: "title",
+                                        children: "УБОРКА ТЕРРИТОРИИ"
+                                    }),
+                                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                        className: "text",
+                                        children: "Красивые и ухоженные сады и газоны"
                                     })
                                 ]
-                            }),
-                            /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                className: "title",
-                                children: "УБОРКА ТЕРРИТОРИИ"
                             }),
                             /*#__PURE__*/ jsx_runtime_.jsx("div", {
                                 className: "text",
@@ -1457,35 +1473,35 @@ const Services = ()=>{
                             })
                         ]
                     }),
-                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                        className: "text",
-                        children: "Красивые и ухоженные сады и газоны"
-                    })
-                ]
-            }),
-            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                className: "wrapper green",
-                children: [
                     /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                        className: "card",
+                        className: "wrapper green",
                         children: [
                             /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                                className: "card-image card5",
+                                className: "card",
                                 children: [
-                                    /*#__PURE__*/ jsx_runtime_.jsx((image_default()), {
-                                        src: service5,
-                                        alt: "service",
-                                        onLoadingComplete: imgLoaded,
-                                        onLoad: imgLoaded
+                                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                        className: "card-image card5",
+                                        children: [
+                                            /*#__PURE__*/ jsx_runtime_.jsx((image_default()), {
+                                                src: service5,
+                                                alt: "service",
+                                                onLoadingComplete: imgLoaded,
+                                                onLoad: imgLoaded
+                                            }),
+                                            /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                                className: "overlay"
+                                            })
+                                        ]
                                     }),
                                     /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                        className: "overlay"
+                                        className: "title",
+                                        children: "ДЕЗИНФЕКЦИЯ"
+                                    }),
+                                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                        className: "text",
+                                        children: "Регулярные работы по устранению вредителей"
                                     })
                                 ]
-                            }),
-                            /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                className: "title",
-                                children: "ДЕЗИНФЕКЦИЯ"
                             }),
                             /*#__PURE__*/ jsx_runtime_.jsx("div", {
                                 className: "text",
@@ -1493,45 +1509,41 @@ const Services = ()=>{
                             })
                         ]
                     }),
-                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                        className: "text",
-                        children: "Регулярные работы по устранению вредителей"
-                    })
-                ]
-            }),
-            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                className: "wrapper",
-                children: [
                     /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                        className: "card",
+                        className: "wrapper",
                         children: [
                             /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                                className: "card-image card6",
+                                className: "card",
                                 children: [
-                                    /*#__PURE__*/ jsx_runtime_.jsx((image_default()), {
-                                        src: service6,
-                                        alt: "service",
-                                        onLoadingComplete: imgLoaded,
-                                        onLoad: imgLoaded
+                                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                        className: "card-image card6",
+                                        children: [
+                                            /*#__PURE__*/ jsx_runtime_.jsx((image_default()), {
+                                                src: service6,
+                                                alt: "service",
+                                                onLoadingComplete: imgLoaded,
+                                                onLoad: imgLoaded
+                                            }),
+                                            /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                                className: "overlay"
+                                            })
+                                        ]
                                     }),
                                     /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                        className: "overlay"
+                                        className: "title",
+                                        children: "РЕМОНТ"
+                                    }),
+                                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                        className: "text",
+                                        children: "Ремонтные работы любой сложности"
                                     })
                                 ]
-                            }),
-                            /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                className: "title",
-                                children: "РЕМОНТ"
                             }),
                             /*#__PURE__*/ jsx_runtime_.jsx("div", {
                                 className: "text",
                                 children: "Ремонтные работы любой сложности"
                             })
                         ]
-                    }),
-                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                        className: "text",
-                        children: "Ремонтные работы любой сложности"
                     })
                 ]
             })
