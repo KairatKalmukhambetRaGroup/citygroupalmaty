@@ -32,7 +32,7 @@ export default function Home() {
         <Main openModal={openModal} />
         <About />
         <Services />
-        <Tariffs />
+        <Tariffs openModal={openModal} />
       </main>
       <Footer />
     </>

@@ -2,6 +2,6 @@
   "/page": "app/page.js",
   "/favicon.ico/route": "app/favicon.ico/route.js",
   "/admin/page": "app/admin/page.js",
-  "/api/users/route": "app/api/users/route.js",
-  "/api/applications/route": "app/api/applications/route.js"
+  "/api/applications/route": "app/api/applications/route.js",
+  "/api/users/route": "app/api/users/route.js"
 }

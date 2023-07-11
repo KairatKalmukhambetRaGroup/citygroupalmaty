@@ -1764,7 +1764,7 @@ const Application = ()=>{
 
 
 
-const Tariffs = ()=>{
+const Tariffs = ({ openModal })=>{
     return /*#__PURE__*/ jsx_runtime_.jsx("div", {
         id: "tariffs",
         children: /*#__PURE__*/ jsx_runtime_.jsx("div", {
@@ -1826,6 +1826,7 @@ const Tariffs = ()=>{
                                     }),
                                     /*#__PURE__*/ jsx_runtime_.jsx("div", {
                                         className: "btn",
+                                        onClick: openModal,
                                         children: "Подробнее"
                                     })
                                 ]
@@ -1877,6 +1878,7 @@ const Tariffs = ()=>{
                                     }),
                                     /*#__PURE__*/ jsx_runtime_.jsx("div", {
                                         className: "btn",
+                                        onClick: openModal,
                                         children: "Подробнее"
                                     })
                                 ]
@@ -1933,7 +1935,9 @@ function Home() {
                     }),
                     /*#__PURE__*/ jsx_runtime_.jsx(components_About, {}),
                     /*#__PURE__*/ jsx_runtime_.jsx(components_Services, {}),
-                    /*#__PURE__*/ jsx_runtime_.jsx(components_Tariffs, {})
+                    /*#__PURE__*/ jsx_runtime_.jsx(components_Tariffs, {
+                        openModal: openModal
+                    })
                 ]
             }),
             /*#__PURE__*/ jsx_runtime_.jsx(components_Footer, {})

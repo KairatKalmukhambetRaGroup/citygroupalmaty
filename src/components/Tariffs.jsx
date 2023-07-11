@@ -1,7 +1,7 @@
 import '@/styles/tariffs.scss';
 import Application from './Application';
 
-const Tariffs = () => {
+const Tariffs = ({openModal}) => {
     return (
         <div id="tariffs">
             <div className="container">
@@ -31,7 +31,7 @@ const Tariffs = () => {
                                     <li>service</li>
                                 </ul>
                             </div>
-                            <div className="btn">
+                            <div className="btn" onClick={openModal}>
                                 Подробнее
                             </div>
                         </div>
@@ -56,7 +56,7 @@ const Tariffs = () => {
                                     <li>service</li>
                                 </ul>
                             </div>
-                            <div className="btn">
+                            <div className="btn" onClick={openModal}>
                                 Подробнее
                             </div>
                         </div>
