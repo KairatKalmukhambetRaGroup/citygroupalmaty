@@ -13,9 +13,9 @@ const Footer = () => {
                             <div className="contacts">
                                 Мы на связи!
                                 <div className="icons">
-                                    <a href="http://" target="_blank" rel="noopener noreferrer" className='whatsapp'><i></i></a>
-                                    <a href="http://" target="_blank" rel="noopener noreferrer" className='telegram'><i></i></a>
-                                    <a href="http://" target="_blank" rel="noopener noreferrer" className='instagram'><i></i></a>
+                                    <a href="https://wa.me/77057025552" target="_blank" rel="noopener noreferrer" className='whatsapp'><i></i></a>
+                                    {/* <a href="http://" target="_blank" rel="noopener noreferrer" className='telegram'><i></i></a> */}
+                                    <a href="https://www.instagram.com/citygroupalm/" target="_blank" rel="noopener noreferrer" className='instagram'><i></i></a>
                                 </div>
                             </div>
                             <div className="copyright">

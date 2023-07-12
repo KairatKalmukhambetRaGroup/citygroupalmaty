@@ -1,18 +1,20 @@
 @use './variables' as v;
+@import './adaptive';
 
 #about{
     .content{
         display: flex;
         flex-direction: column;
-        gap: 60px;
+        gap: 16px;
 
         .top{
             display: flex;
-            gap: 40px;
+            flex-direction: column;
+            gap: 24px;
             .logo{
                 min-height: 100%;
                 height: 100%;
-                content: url('../assets/svg/logo.svg');
+                content: url('../assets/svg/menu-logo.svg');
             }
             .text{
                 display: flex;
@@ -20,15 +22,12 @@
                 gap: 24px;
                 flex-grow: 1;
                 .title{
-                    color: v.$primary-green;
-                    font-size: 56px;
-                    font-weight: 700;
-                    line-height: normal;
+                    display: none;
                 }
                 .description{
-                    font-size: 16px;
+                    font-size: 13px;
                     font-weight: 500;
-                    line-height: 20px;
+                    line-height: 16px;
                     color: v.$black;
                 }
             }
@@ -36,29 +35,95 @@
         .mid{
             display: flex;
             flex-direction: column;
-            gap: 24px;
+            gap: 8px;
             .title{
                 color: v.$primary-green;
-                font-size: 40px;
-                font-family: Gilroy;
+                font-size: 20px;
+                line-height: 24px;
                 font-weight: 600;
             }
             .description{
                 color: v.$black;
-                font-size: 16px;
+                font-size: 13px;
                 font-weight: 500;
-                line-height: 20px;
+                line-height: 16px;
             }
         }
         .bottom{
             display: flex;
             flex-direction: column;
-            gap: 24px;
+            gap: 8px;
             .title{
                 color: v.$primary-green;
-                font-size: 40px;
-                line-height: normal;
+                font-size: 20px;
+                line-height: 24px;
                 font-weight: 600;
+            }
+        }
+    }
+    @include _lg{
+        .content{
+            display: flex;
+            flex-direction: column;
+            gap: 60px;
+    
+            .top{
+                display: flex;
+                flex-direction: row;
+                gap: 40px;
+                .logo{
+                    min-height: 100%;
+                    height: 100%;
+                    content: url('../assets/svg/logo.svg');
+                }
+                .text{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 24px;
+                    flex-grow: 1;
+                    display: block;
+                    .title{
+                        display: block;
+                        color: v.$primary-green;
+                        font-size: 56px;
+                        font-weight: 700;
+                        line-height: normal;
+                    }
+                    .description{
+                        font-size: 16px;
+                        font-weight: 500;
+                        line-height: 20px;
+                        color: v.$black;
+                    }
+                }
+            }
+            .mid{
+                display: flex;
+                flex-direction: column;
+                gap: 24px;
+                .title{
+                    color: v.$primary-green;
+                    font-size: 40px;
+                    font-family: Gilroy;
+                    font-weight: 600;
+                }
+                .description{
+                    color: v.$black;
+                    font-size: 16px;
+                    font-weight: 500;
+                    line-height: 20px;
+                }
+            }
+            .bottom{
+                display: flex;
+                flex-direction: column;
+                gap: 24px;
+                .title{
+                    color: v.$primary-green;
+                    font-size: 40px;
+                    line-height: normal;
+                    font-weight: 600;
+                }
             }
         }
     }

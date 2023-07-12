@@ -17,76 +17,118 @@ const imgLoaded = (e) => {
 const Services = () => {
     return (
         <div id="services">
-            <div className="card">
-                <div className="card-image card1">
-                    <Image src={Service1} alt='service' onLoadingComplete={imgLoaded} onLoad={imgLoaded} />
-                    <div className="overlay"></div>
-                </div>
+            <div className="container">
                 <div className="title">
-                УБОРКА ПОДЪЕЗДОВ
-                </div>
-                <div className="text">
-                Гарантируем чистоту и порядок у ваших дверей, всегда
+                    УСЛУГИ
                 </div>
             </div>
-            <div className="card">
-                <div className="card-image card2">
-                    <Image src={Service2} alt='service' onLoadingComplete={imgLoaded} onLoad={imgLoaded} />
-                    <div className="overlay"></div>
+            <div className="content">
+
+                <div className="wrapper green">
+                    <div className="card">
+                        <div className="card-image card1">
+                            <Image src={Service1} alt='service' onLoadingComplete={imgLoaded} onLoad={imgLoaded} />
+                            <div className="overlay"></div>
+                        </div>
+                        <div className="title">
+                        УБОРКА ПОДЪЕЗДОВ
+                        </div>
+                        <div className="text">
+                        Гарантируем чистоту и порядок у ваших дверей, всегда
+                        </div>
+                    </div>
+                    <div className="text">
+                        Гарантируем чистоту и порядок у ваших дверей, всегда
+                    </div>
                 </div>
-                <div className="title">
-                ОБСЛУЖИВАНИЕ<br/>ДЕТСКИХ ПЛОЩАДОК
+                <div className="wrapper">
+                    <div className="card">
+                        <div className="card-image card2">
+                            <Image src={Service2} alt='service' onLoadingComplete={imgLoaded} onLoad={imgLoaded} />
+                            <div className="overlay"></div>
+                        </div>
+                        <div className="title">
+                        ОБСЛУЖИВАНИЕ<br/>ДЕТСКИХ ПЛОЩАДОК
+                        </div>
+                        <div className="text">
+                        Все лучшее - детям!
+                        </div>
+                    </div>
+                    <div className="text">
+                        Все лучшее - детям!
+                        </div>
+                    </div>
+                <div className="wrapper">
+
+                    <div className="card">
+                        <div className="card-image card3">
+                            <Image src={Service3} alt='service' onLoadingComplete={imgLoaded} onLoad={imgLoaded} />
+                            <div className="overlay"></div>
+                        </div>
+                        <div className="title">
+                        ТЕХОБСЛУЖИВАНИЕ<br/>КВАРТИР
+                        </div>
+                        <div className="text">
+                        Бесплатный вызов мастера 24/7
+                        </div>
+                    </div>
+                    <div className="text">
+                        Бесплатный вызов мастера 24/7
+                        </div>
+                    </div>
+                <div className="wrapper green">
+
+                    <div className="card">
+                        <div className="card-image card4">
+                            <Image src={Service4} alt='service' onLoadingComplete={imgLoaded} onLoad={imgLoaded} />
+                            <div className="overlay"></div>
+                        </div>
+                        <div className="title">
+                        УБОРКА ТЕРРИТОРИИ
+                        </div>
+                        <div className="text">
+                        Красивые и ухоженные сады и газоны
+                        </div>
+                    </div>
+                    <div className="text">
+                        Красивые и ухоженные сады и газоны
+                        </div>
                 </div>
-                <div className="text">
-                Все лучшее - детям!
-                </div>
-            </div>
-            <div className="card">
-                <div className="card-image card3">
-                    <Image src={Service3} alt='service' onLoadingComplete={imgLoaded} onLoad={imgLoaded} />
-                    <div className="overlay"></div>
-                </div>
-                <div className="title">
-                ТЕХОБСЛУЖИВАНИЕ<br/>КВАРТИР
-                </div>
-                <div className="text">
-                Бесплатный вызов мастера 24/7
-                </div>
-            </div>
-            <div className="card">
-                <div className="card-image card4">
-                    <Image src={Service4} alt='service' onLoadingComplete={imgLoaded} onLoad={imgLoaded} />
-                    <div className="overlay"></div>
-                </div>
-                <div className="title">
-                УБОРКА ТЕРРИТОРИИ
-                </div>
-                <div className="text">
-                Красивые и ухоженные сады и газоны
-                </div>
-            </div>
-            <div className="card">
-                <div className="card-image card5">
-                    <Image src={Service5} alt='service' onLoadingComplete={imgLoaded} onLoad={imgLoaded} />
-                    <div className="overlay"></div>
-                </div>
-                <div className="title">
-                ДЕЗИНФЕКЦИЯ
-                </div>
-                <div className="text">
-                Регулярные работы по устранению вредителей
-                </div>
-            </div>
-            <div className="card">
-                <div className="card-image card6">
-                    <Image src={Service6} alt='service' onLoadingComplete={imgLoaded} onLoad={imgLoaded} />
-                    <div className="overlay"></div>
-                </div>
-                <div className="title">
-                РЕМОНТ
-                </div>
-                <div className="text">
-                Ремонтные работы любой сложности
+                <div className="wrapper green">
+
+                    <div className="card">
+                        <div className="card-image card5">
+                            <Image src={Service5} alt='service' onLoadingComplete={imgLoaded} onLoad={imgLoaded} />
+                            <div className="overlay"></div>
+                        </div>
+                        <div className="title">
+                        ДЕЗИНФЕКЦИЯ
+                        </div>
+                        <div className="text">
+                        Регулярные работы по устранению вредителей
+                        </div>
+                    </div>
+                    <div className="text">
+                        Регулярные работы по устранению вредителей
+                        </div>
+                    </div>
+                <div className="wrapper">
+
+                    <div className="card">
+                        <div className="card-image card6">
+                            <Image src={Service6} alt='service' onLoadingComplete={imgLoaded} onLoad={imgLoaded} />
+                            <div className="overlay"></div>
+                        </div>
+                        <div className="title">
+                        РЕМОНТ
+                        </div>
+                        <div className="text">
+                        Ремонтные работы любой сложности
+                        </div>
+                    </div>
+                    <div className="text">
+                        Ремонтные работы любой сложности
+                        </div>
                 </div>
             </div>
         </div>

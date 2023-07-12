@@ -1,0 +1,112 @@
+@use './variables' as v;
+
+#statusModal{
+    position: fixed;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    background: rgba(179, 179, 179, 0.50);
+    padding: 16px;
+    .content{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 48px;
+
+        width: 560px;
+        max-width: 560px;
+        height: 412px;
+        max-height: 412px;
+        background: v.$white;
+        padding: 32px;
+        border-radius: 16px;
+        &.loading{
+            i{
+                width: 120px;
+                height: 120px;
+                content: url('../assets/svg/loading.svg');
+                animation: rotate 2s linear infinite;
+            }
+        }
+        .close{
+            position: absolute;
+            top: 32px;
+            right: 32px;
+            cursor: pointer;
+            color: v.$primary_grey;
+
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 20px;
+        }
+        .body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 24px;
+            i{
+                width: 80px;
+                height: 80px;
+            }
+
+            .text{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 16px;
+                .title{
+                    color: #000;
+                    text-align: center;
+                    font-size: 24px;
+                    font-weight: 600;
+                }
+                .subtitle{
+                    color: #000;
+                    text-align: center;
+                    font-size: 16px;
+                    font-weight: 500;
+                    line-height: 20px;
+                }
+            }
+        }
+        .btn{
+            display: flex;
+            width: 196px;
+            height: 48px;
+            padding: 8px;
+            justify-content: center;
+            align-items: center;
+            border-radius: 8px;
+            background: v.$primary-green;
+
+            color: v.$white;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 20px;
+            cursor: pointer;
+        }
+
+        &.success i {
+            content: url('../assets/svg/success-icon.svg');
+        }
+        &.fail i {
+            content: url('../assets/svg/error-icon.svg');
+        }
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg) scale(1.0);
+    }
+    50%{
+        transform: rotate(180deg) scale(0.9);
+    }
+    100% {
+        transform: rotate(360deg) scale(1.0);
+    }
+}

@@ -9,7 +9,7 @@ import Tariffs from "@/components/Tariffs";
 import { useEffect, useState } from "react";
 
 export default function Home() {
-  const [showModal, setShowModal] = useState(true);
+  const [showModal, setShowModal] = useState(false);
   const openModal = (e) => {
     e.preventDefault();
     setShowModal(true);
@@ -20,6 +20,7 @@ export default function Home() {
       document.querySelector('body').style.overflow = 'hidden';
     }else{
       document.querySelector('body').style.overflow = 'auto';
+      document.querySelector('body').style.overflowX = 'hidden';
     }
   }, [showModal])
 
@@ -31,7 +32,7 @@ export default function Home() {
         <Main openModal={openModal} />
         <About />
         <Services />
-        <Tariffs />
+        <Tariffs openModal={openModal} />
       </main>
       <Footer />
     </>

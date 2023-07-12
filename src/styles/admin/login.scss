@@ -1,0 +1,197 @@
+@use '../variables' as v;
+@import '../adaptive';
+
+#login{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .content{
+        display: flex;
+        flex-direction: column;
+        gap: 48px;
+        max-width: 360px;
+        i.logo{
+            content: url('../../assets/svg/menu-logo.svg');
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            .inputs{
+                display: flex;
+                flex-direction: column;
+                gap: 24px;
+                .form-group{
+                    position: relative;
+                    display: flex;
+                    flex-direction: column;
+                    label{
+                        color: v.$primary-grey;
+                        font-size: 13px;
+                        font-weight: 500;
+                        line-height: 16px;
+                    }
+                    input{
+                        width: 100%;
+                        padding: 16px;
+                        border-radius: 8px;
+                        background: #F2F6FA;
+                        border: none;
+
+                        color: v.$black;
+                        font-family: Gilroy;
+                        font-size: 16px;
+                        font-weight: 500;
+                        line-height: 20px;
+                        &:focus{
+                            outline: none;
+                        }
+                    }
+                    .error{
+                        position: absolute;
+                        left: 0;
+                        top: 100%;
+                        color: #F71B1B;
+                        font-size: 13px;
+                        font-weight: 500;
+                        line-height: 16px;
+                    }
+                }
+            }
+            .bottom{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 24px;
+                .forgot{
+                    cursor: pointer;
+                    color: v.$black;
+                    font-size: 14px;
+                    font-weight: 500;
+                    line-height: 16px;
+                }
+                .btn{
+                    max-width: 50%;
+                    width: 50%;
+                    padding: 8px;
+                    color: v.$white;
+                    font-size: 16px;
+                    font-weight: 500;
+                    line-height: 20px;
+                    border-radius: 8px;
+                    background: v.$primary-green;
+                    border: none;
+                    cursor: pointer;
+                    &:focus{
+                        outline: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#forgotPassword{
+    position: fixed;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(179, 179, 179, 0.50);
+    z-index: 1000;
+    padding: 16px;
+    .content{
+        background: v.$white;
+        padding: 40px;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        width: 400px;
+        max-width: 400px;
+        .text{
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            .title{
+                color: v.$black;
+                font-size: 24px;
+                font-weight: 600;
+            }
+            .description{
+                color: v.$black;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 20px;
+            }
+        }
+        input{
+            width: 100%;
+            padding: 16px;
+            border-radius: 8px;
+            background: #F2F6FA;
+            border: none;
+
+            color: v.$black;
+            font-family: Gilroy;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 20px;
+            &:focus{
+                outline: none;
+            }
+        }
+        .bottom{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 24px;
+            .close{
+                cursor: pointer;
+                color: v.$black;
+                font-size: 13px;
+                font-weight: 500;
+                line-height: 16px;
+            }
+            .btn{
+                margin-left: auto;
+                cursor: pointer;
+                padding: 8px 16px;
+                gap: 8px;
+                border-radius: 8px;
+                background: v.$primary-green;
+                color: v.$white;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 20px;
+            }
+        }
+        .loading{
+            padding: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            i{
+                width: 48px;
+                height: 48px;
+                content: url('../../assets/svg/loading.svg');
+                animation: rotate 2s linear infinite;
+            }
+        }
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg) scale(1.0);
+    }
+    50%{
+        transform: rotate(180deg) scale(0.9);
+    }
+    100% {
+        transform: rotate(360deg) scale(1.0);
+    }
+}

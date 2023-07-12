@@ -1,11 +1,12 @@
 @use './variables' as v;
-
+@import './adaptive';
 
 header{
     background: v.$white;
     width: 100%;
-    height: 120px;
+    max-width: 100vw;
     position: fixed;
+    height: 56px;
     top: 0;
     left: 0;
     z-index: 100;
@@ -15,43 +16,80 @@ header{
         align-items: center;
         justify-content: space-between;
         .logo{
+            font-size: 13px;
+            line-height: 16px;
             color: v.$black;
             font-weight: 600;
-            line-height: normal;
-            font-size: 23px;
             text-decoration: none;
         }
         .navbar{
-            display: flex;
-            gap: 48px;
-            align-items: center;
-            .nav{
+            display: none;
+        }
+        .menu{
+            cursor: pointer;
+            content: url('../assets/svg/menu.svg');
+        }
+    }
+
+    @include _lg{
+        height: 120px;
+        .content{
+
+    
+            .logo{
+                font-size: 23px;
+            }
+            .navbar{
                 display: flex;
-                gap: 32px;
+                gap: 48px;
                 align-items: center;
-                a{
-                    color: v.$black_light;
-                    text-decoration: none;
+                .nav{
+                    display: flex;
+                    gap: 32px;
+                    align-items: center;
+                    a{
+                        color: v.$black_light;
+                        text-decoration: none;
+                        font-size: 16px;
+                        font-weight: 500;
+                        line-height: 20px;
+                        position: relative;
+                        &::after{
+                            content: '';
+                            position: absolute;
+                            bottom: -4px;
+                            left: 0;
+                            width: 100%;
+                            height: 2px;
+                            border-radius: 2px;
+                            background-color: v.$primary-green;
+                            opacity: 0;
+                            transition: opacity .2s ease-in-out;
+                        }
+                        &:hover::after{
+                            opacity: 1;
+                        }
+                    }
+                }
+                .btn{
+                    background: v.$primary-green;
+                    border-radius: 8px;
+                    padding: 8px;
+                    width: 196px;
+                    height: 48px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+    
                     font-size: 16px;
                     font-weight: 500;
                     line-height: 20px;
+                    color: v.$white;
+                    cursor: pointer;
                 }
             }
-            .btn{
-                background: v.$primary-green;
-                border-radius: 8px;
-                padding: 8px;
-                width: 196px;
-                height: 48px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-
-                font-size: 16px;
-                font-weight: 500;
-                line-height: 20px;
-                color: v.$white;
-                cursor: pointer;
+            .menu{
+                display: none;
             }
         }
     }
