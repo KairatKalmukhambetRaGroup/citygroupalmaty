@@ -2,6 +2,6 @@
   "/page": "/",
   "/favicon.ico/route": "/favicon.ico",
   "/admin/page": "/admin",
-  "/api/applications/route": "/api/applications",
-  "/api/users/route": "/api/users"
+  "/api/users/route": "/api/users",
+  "/api/applications/route": "/api/applications"
 }

@@ -14,28 +14,29 @@ const Tariffs = ({openModal}) => {
                             <div className="body">
                                 <div className="heading">
                                     <div className="title">
-                                    Название тарифа №1
+                                    Базовый Тариф
                                     </div>
-                                    <div className="description">
+                                    {/* <div className="description">
                                     Описание тарифа. Тариф предназначен для жителей, тариф предназначен для жителей
-                                    </div>
+                                    </div> */}
                                 </div>
                                 <div className="price">
-                                от 25 000 тенге
+                                индивидуальная цена
                                 </div>
                                 <ul className='items'>
-                                    <li>service</li>
-                                    <li>service</li>
-                                    <li>service</li>
-                                    <li>service</li>
-                                    <li>service</li>
+                                    <li>Уборка подъездов</li>
+                                    <li>Обслуживание детских площадок</li>
+                                    <li>Техобслуживание квартир</li>
+                                    <li>Уборка территории</li>
+                                    <li>Дезинфекция</li>
+                                    <li>Ремонт</li>
                                 </ul>
                             </div>
                             <div className="btn" onClick={openModal}>
                                 Подробнее
                             </div>
                         </div>
-                        <div className="card">
+                        {/* <div className="card">
                             <div className="body">
                                 <div className="heading">
                                     <div className="title">
@@ -59,7 +60,7 @@ const Tariffs = ({openModal}) => {
                             <div className="btn" onClick={openModal}>
                                 Подробнее
                             </div>
-                        </div>
+                        </div> */}
                     </div>
 
                     <Application />

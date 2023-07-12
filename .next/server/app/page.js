@@ -1064,21 +1064,14 @@ const Footer = ()=>{
                                                     className: "icons",
                                                     children: [
                                                         /*#__PURE__*/ jsx_runtime_.jsx("a", {
-                                                            href: "http://",
+                                                            href: "https://wa.me/77057025552",
                                                             target: "_blank",
                                                             rel: "noopener noreferrer",
                                                             className: "whatsapp",
                                                             children: /*#__PURE__*/ jsx_runtime_.jsx("i", {})
                                                         }),
                                                         /*#__PURE__*/ jsx_runtime_.jsx("a", {
-                                                            href: "http://",
-                                                            target: "_blank",
-                                                            rel: "noopener noreferrer",
-                                                            className: "telegram",
-                                                            children: /*#__PURE__*/ jsx_runtime_.jsx("i", {})
-                                                        }),
-                                                        /*#__PURE__*/ jsx_runtime_.jsx("a", {
-                                                            href: "http://",
+                                                            href: "https://www.instagram.com/citygroupalm/",
                                                             target: "_blank",
                                                             rel: "noopener noreferrer",
                                                             className: "instagram",
@@ -1776,114 +1769,57 @@ const Tariffs = ({ openModal })=>{
                         className: "title",
                         children: "ТАРИФЫ"
                     }),
-                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
                         className: "cards",
-                        children: [
-                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                                className: "card",
-                                children: [
-                                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                                        className: "body",
-                                        children: [
-                                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                                                className: "heading",
-                                                children: [
-                                                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                                        className: "title",
-                                                        children: "Название тарифа №1"
-                                                    }),
-                                                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                                        className: "description",
-                                                        children: "Описание тарифа. Тариф предназначен для жителей, тариф предназначен для жителей"
-                                                    })
-                                                ]
-                                            }),
-                                            /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                                className: "price",
-                                                children: "от 25 000 тенге"
-                                            }),
-                                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("ul", {
-                                                className: "items",
-                                                children: [
-                                                    /*#__PURE__*/ jsx_runtime_.jsx("li", {
-                                                        children: "service"
-                                                    }),
-                                                    /*#__PURE__*/ jsx_runtime_.jsx("li", {
-                                                        children: "service"
-                                                    }),
-                                                    /*#__PURE__*/ jsx_runtime_.jsx("li", {
-                                                        children: "service"
-                                                    }),
-                                                    /*#__PURE__*/ jsx_runtime_.jsx("li", {
-                                                        children: "service"
-                                                    }),
-                                                    /*#__PURE__*/ jsx_runtime_.jsx("li", {
-                                                        children: "service"
-                                                    })
-                                                ]
+                        children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                            className: "card",
+                            children: [
+                                /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                    className: "body",
+                                    children: [
+                                        /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                            className: "heading",
+                                            children: /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                                className: "title",
+                                                children: "Базовый Тариф"
                                             })
-                                        ]
-                                    }),
-                                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                        className: "btn",
-                                        onClick: openModal,
-                                        children: "Подробнее"
-                                    })
-                                ]
-                            }),
-                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                                className: "card",
-                                children: [
-                                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                                        className: "body",
-                                        children: [
-                                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                                                className: "heading",
-                                                children: [
-                                                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                                        className: "title",
-                                                        children: "Название тарифа №2"
-                                                    }),
-                                                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                                        className: "description",
-                                                        children: "Описание тарифа. Тариф предназначен для жителей, тариф предназначен для жителей"
-                                                    })
-                                                ]
-                                            }),
-                                            /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                                className: "price",
-                                                children: "от 45 000 тенге"
-                                            }),
-                                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("ul", {
-                                                className: "items",
-                                                children: [
-                                                    /*#__PURE__*/ jsx_runtime_.jsx("li", {
-                                                        children: "service"
-                                                    }),
-                                                    /*#__PURE__*/ jsx_runtime_.jsx("li", {
-                                                        children: "service"
-                                                    }),
-                                                    /*#__PURE__*/ jsx_runtime_.jsx("li", {
-                                                        children: "service"
-                                                    }),
-                                                    /*#__PURE__*/ jsx_runtime_.jsx("li", {
-                                                        children: "service"
-                                                    }),
-                                                    /*#__PURE__*/ jsx_runtime_.jsx("li", {
-                                                        children: "service"
-                                                    })
-                                                ]
-                                            })
-                                        ]
-                                    }),
-                                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                        className: "btn",
-                                        onClick: openModal,
-                                        children: "Подробнее"
-                                    })
-                                ]
-                            })
-                        ]
+                                        }),
+                                        /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                            className: "price",
+                                            children: "индивидуальная цена"
+                                        }),
+                                        /*#__PURE__*/ (0,jsx_runtime_.jsxs)("ul", {
+                                            className: "items",
+                                            children: [
+                                                /*#__PURE__*/ jsx_runtime_.jsx("li", {
+                                                    children: "Уборка подъездов"
+                                                }),
+                                                /*#__PURE__*/ jsx_runtime_.jsx("li", {
+                                                    children: "Обслуживание детских площадок"
+                                                }),
+                                                /*#__PURE__*/ jsx_runtime_.jsx("li", {
+                                                    children: "Техобслуживание квартир"
+                                                }),
+                                                /*#__PURE__*/ jsx_runtime_.jsx("li", {
+                                                    children: "Уборка территории"
+                                                }),
+                                                /*#__PURE__*/ jsx_runtime_.jsx("li", {
+                                                    children: "Дезинфекция"
+                                                }),
+                                                /*#__PURE__*/ jsx_runtime_.jsx("li", {
+                                                    children: "Ремонт"
+                                                })
+                                            ]
+                                        })
+                                    ]
+                                }),
+                                /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                    className: "btn",
+                                    onClick: openModal,
+                                    children: "Подробнее"
+                                })
+                            ]
+                        })
                     }),
                     /*#__PURE__*/ jsx_runtime_.jsx(components_Application, {})
                 ]
